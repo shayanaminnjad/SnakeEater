@@ -1,5 +1,4 @@
 #include "World.h"
-#include "LogHandler.h"
 
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Clock.hpp>
@@ -14,7 +13,6 @@ int main()
 	sf::Time frameRate = sf::seconds(1.f / 30.f);
 	sf::RenderWindow window(sf::VideoMode(800, 800), "Snake Eater");
 	sf::View myView = window.getDefaultView();
-	LogHandler timeLog("frameRate.txt");
 	window.setVerticalSyncEnabled(false);
 	window.setKeyRepeatEnabled(false);
 
