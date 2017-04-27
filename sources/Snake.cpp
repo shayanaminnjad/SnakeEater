@@ -186,8 +186,8 @@ void Snake::moveSnake()
 
 void Snake::moveBlockToCell(BodyBlock& body, int xCell, int yCell)
 {	
-	if (xCell > mCellBoard.getCellBoardSize() || xCell<0 ||
-		yCell>mCellBoard.getCellBoardSize() || yCell < 0)
+	if (xCell >= mCellBoard.getCellBoardSize() || xCell < 0 ||
+		yCell >= mCellBoard.getCellBoardSize() || yCell < 0)
 	{
 		mIsAlive = false;
 		return;
